@@ -1,0 +1,64 @@
+body {
+  color: #FFF;
+  background-color: #1B1B1B;
+  font-family: 'Comfortaa', cursive;
+  overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+#playField {
+  min-height: 585px;
+}
+
+.card {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 13px;
+  border: none;
+  background-color: transparent;
+}
+.card .front, .card .back {
+  position: absolute;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: 1s;
+  backface-visibility: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.front {
+  background-color: #606060;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.card.show_info .back {
+  transform: rotateY(0deg);
+}
+
+.card.show_info .front {
+  transform: rotateY(-180deg);
+}
+
+a {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  margin-top: 80px;
+}
+
+a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
