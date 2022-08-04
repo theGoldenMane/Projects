@@ -66,6 +66,10 @@ a {
             justify-content: space-between;
             text-align: end;
 
+            &.single {
+                justify-content: end;
+            }
+
             i {
                 font-size: 30px;
             }
